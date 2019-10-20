@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+
+<!-- <h1>Sign Up!</h1>
+
+<form action="/register" method="POST">
+	<input type="text" name="username" placeholder="username">
+	<input type="password" name="password" placeholder="password">
+	<button>Sign Up!</button>
+</form> -->
+
+<div class="container">
+    <h1 class="welcome text-center">Welcome to <br> YelpCamp!</h1>
+        <div class="card card-container">
+        <h2 class='login_title text-center'>Sign Up!</h2>
+        <hr>
+			
+			<form class="form-signin" action="/register" method="POST">
+                <span id="reauth-email" class="reauth-email"></span>
+                <p class="input_title">Username</p>
+                <input type="text" id="inputEmail" class="login_box" name="username" placeholder="John123" required autofocus>
+                <p class="input_title">Password</p>
+                <input type="password" id="inputPassword" class="login_box" name="password" placeholder="******" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        
+                    </label>
+                </div>
+             <button class="btn btn-lg btn-primary" type="submit">Sign Up</button>
+            </form><!-- /form -->
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+
+<% include ./partials/footer %>
